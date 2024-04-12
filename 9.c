@@ -2,8 +2,7 @@
 #include <string.h>
 
 int main() {
-    char firstName[100], middleName[100], lastName[100];
-    char abbreviated[100];
+    char firstName[100], middleName[100], lastName[100], abbreviated[100];
 
     printf("Enter your full name: ");
     scanf("%s %s %s", firstName, middleName, lastName);

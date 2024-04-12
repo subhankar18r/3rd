@@ -8,8 +8,7 @@ void displayArray(int array[], int size) {
 }
 
 int main() {
-    int array[100] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    int size = 10; 
+    int array[100] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, size = 10; 
 
     displayArray(array, size);
 

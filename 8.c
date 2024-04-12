@@ -7,9 +7,6 @@ int main() {
     printf("Enter a string: ");
     fgets(str, 100, stdin);
 
-    // Remove newline character from input
-    str[strcspn(str, "\n")] = '\0';
-
     int len = strlen(str);
     int isPalindrome = 1; 
 

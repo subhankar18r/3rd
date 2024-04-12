@@ -24,13 +24,15 @@ int main() {
     }
 
     printf("using library function.\n");
-    int resultWithLib = strcmp(str1, str2);
-    if (resultWithLib == 0) {
-        printf("Strings are equal in length\n");
-    } else if (resultWithLib < 0) {
-        printf("'%s' is longer than '%s'\n", str1, str2);
+    int str1Len = strlen(str1);
+    int str2Len = strlen(str2);
+
+     if (str1Len == str2Len) {
+        printf("Strings are equal in length.\n");
+    } else if (str1Len > str2Len) {
+        printf("'%s' is longer than '%s'.\n", str1, str2);
     } else {
-        printf("'%s' is longer than '%s'\n", str2, str1);
+        printf("'%s' is longer than '%s'.\n", str2, str1);
     }
 
     return 0;
